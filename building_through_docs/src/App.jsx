@@ -1,19 +1,21 @@
-function Profile(){
-  return (
-    <img
-    src="https://i.imgur.com/MK3eW3As.jpg"
-    alt="Katherine Johnson"
-    />
-  )
-}
+import Avatar from "./Ava";
+import Gallery from "./Gallery";
+import { Profile } from "./Gallery";
+import TodoList from "./Todo";
+import { WhoStoDO } from "./Todo";
+import DateToday from "./Dated";
+import Styling from "./Styling";
 
-export default function Gallery(){
-  return(
-    <section>
-      <h1>Amazing Scientist</h1>
-      <Profile />
-      <Profile />
-      <Profile />
-    </section>
-  );
+
+export default function App(){
+  return (
+    <>
+    <Profile />
+    <TodoList />
+    <Avatar />
+    <WhoStoDO />
+    <DateToday />
+    <Styling />
+    </>
+  )
 }
